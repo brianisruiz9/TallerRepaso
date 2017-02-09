@@ -37,7 +37,7 @@ public class Repaso {
 
 //2
         int[][] num = new int[4][2];
-
+        int ac=0;
         for (int i = 0; i < num.length; i++) {
             for (int j = 0; j < num[i].length; j++) {
                 num[i][j] = (int) (Math.random() * 9 + 1);
@@ -47,14 +47,15 @@ public class Repaso {
 
         for (int x = 0; x < num.length; x++) {
             for (int y = 0; y < num[x].length; y++) {
-                acum = acum + num[x][y];
+                ac = ac + num[x][y];
             }
         }
         System.out.println("");
-        System.out.println("La suma es: " + acum);
+        System.out.println("La suma es: " + ac);
 //3
 
         int p = 0;
+        int acun=0;
         int[][] a = new int[3][3];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
@@ -64,30 +65,30 @@ public class Repaso {
         }
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a.length; j++) {
-                acum = acum + a[i][j];
-                p = acum / 9;
+                acun = acun + a[i][j];
+                p = acun / 9;
             }
         }
         System.out.println("");
         System.out.println("El promedio es:" + p);
 //4
         int[][] b = new int[4][4];
-        acum = 0;
+        int au= 0;
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b[i].length; j++) {
                 b[i][j] = (int) (Math.random() * 9 + 1);
-                // System.out.println(b[i][j]);
+                 //System.out.println(b[i][j]);
             }
         }
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b.length; j++) {
                 if (i == j) {
-                    acum = acum + b[i][j];
+                    au = au + b[i][j];
                 }
             }
         }
         System.out.println("");
-        System.out.println("La sumatoria es: " + acum);
+        System.out.println("La sumatoria es: " + au);
 
 //5
         ArrayList<Integer> ba = new ArrayList<Integer>();
@@ -111,16 +112,16 @@ public class Repaso {
         ba.add(0);
         ba.add(1);
         ba.add(2);
-        
+
         System.out.println("");
-        System.out.println("Elemento dado: "+ab.get(3));
+        System.out.println("Elemento dado: " + ab.get(3));
 //6 incom
-System.out.println("matriz");
+        // System.out.println("matriz");
         int[][] c = new int[3][4];
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[i].length; j++) {
                 c[i][j] = (int) (Math.random() * 9 + 1);
-                System.out.println(c[i][j]);
+                //System.out.println(c[i][j]);
             }
         }
 
@@ -130,10 +131,29 @@ System.out.println("matriz");
             }
         }
 
-//7
+//7 
+        ArrayList<Integer> abc = new ArrayList<Integer>();
+        int acuml=0;
+        abc.add(1);
+        abc.add(2);
+        abc.add(3);
+        abc.add(4);
+        abc.add(5);
+        abc.add(6);
+        abc.add(7);
+        abc.add(8);
+
+        for (int i = 0; i < abc.size(); i++) {
+            if (abc.get(i) % 2 == 0) {
+                acuml = acuml + abc.get(i);
+            }
+        }
+        System.out.println("");
+        System.out.println("La sumatoria e: " + acuml);
 
 //8 Incomp
         int[][] d = new int[2][5];
+        int aum = 0;
         for (int i = 0; i < d.length; i++) {
             for (int j = 0; j < d[i].length; j++) {
                 d[i][j] = (int) (Math.random() * 9 + 1);
@@ -144,20 +164,20 @@ System.out.println("matriz");
         for (int i = 0; i < d.length; i++) {
             for (int j = 0; j < d.length; j++) {
                 if (d[i][j] % 2 == 0) {
-                    acum = acum + d[i][j];
+                    aum = aum + d[i][j];
                 }
             }
         }
         System.out.println("");
-        System.out.println("La sumatoria de los num pares es: " + acum);
+        System.out.println("La sumatoria de los num pares es: " + aum);
 
-//9
+//9 incomp
         int contp = 0, conti = 0, contn = 0;
         int[][] e = new int[3][5];
         for (int i = 0; i < e.length; i++) {
             for (int j = 0; j < e[i].length; j++) {
                 e[i][j] = (int) (Math.random() * 9 + 1);
-                //System.out.println(e[i][j]);
+                System.out.println(e[i][j]);
             }
         }
 
@@ -179,11 +199,35 @@ System.out.println("matriz");
 
 //10
 //11
+        ArrayList<Integer> cd = new ArrayList<Integer>();
+        int prom;
+        int acu=0;
+        cd.add(1);
+        cd.add(2);
+        cd.add(3);
+        cd.add(4);
+        cd.add(5);
+        cd.add(6);
+        cd.add(7);
+        cd.add(8);
+        cd.add(9);
+        cd.add(8);
+        cd.add(7);
+        cd.add(6);
+        cd.add(5);
+        cd.add(4);
+        cd.add(3);
+
+        for (int i = 0; i < cd.size(); i++) {
+            acu = acu + cd.get(i);
+        }
+        prom = acu / 15;
+        System.out.println("");
+        System.out.println("El promedio aritmetico es: " + prom);
 //12
         int[][] m1 = new int[3][3];
         int[][] m2 = new int[3][3];
         int[][] mr = new int[3][3];
-        int sm = 0;
         //   System.out.println("");
         //  System.out.println("pr");
         for (int i = 0; i < m1.length; i++) {
