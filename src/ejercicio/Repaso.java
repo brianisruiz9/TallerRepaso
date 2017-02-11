@@ -37,7 +37,7 @@ public class Repaso {
 
 //2
         int[][] num = new int[4][2];
-        int ac=0;
+        int ac = 0;
         for (int i = 0; i < num.length; i++) {
             for (int j = 0; j < num[i].length; j++) {
                 num[i][j] = (int) (Math.random() * 9 + 1);
@@ -55,7 +55,7 @@ public class Repaso {
 //3
 
         int p = 0;
-        int acun=0;
+        int acun = 0;
         int[][] a = new int[3][3];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
@@ -73,11 +73,11 @@ public class Repaso {
         System.out.println("El promedio es:" + p);
 //4
         int[][] b = new int[4][4];
-        int au= 0;
+        int au = 0;
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b[i].length; j++) {
                 b[i][j] = (int) (Math.random() * 9 + 1);
-                 //System.out.println(b[i][j]);
+                //System.out.println(b[i][j]);
             }
         }
         for (int i = 0; i < b.length; i++) {
@@ -115,7 +115,7 @@ public class Repaso {
 
         System.out.println("");
         System.out.println("Elemento dado: " + ab.get(3));
-//6 incom
+//6 i
         // System.out.println("matriz");
         int[][] c = new int[3][4];
         for (int i = 0; i < c.length; i++) {
@@ -133,7 +133,7 @@ public class Repaso {
 
 //7 
         ArrayList<Integer> abc = new ArrayList<Integer>();
-        int acuml=0;
+        int acuml = 0;
         abc.add(1);
         abc.add(2);
         abc.add(3);
@@ -151,7 +151,7 @@ public class Repaso {
         System.out.println("");
         System.out.println("La sumatoria e: " + acuml);
 
-//8 Incomp
+//8 I
         int[][] d = new int[2][5];
         int aum = 0;
         for (int i = 0; i < d.length; i++) {
@@ -171,7 +171,7 @@ public class Repaso {
         System.out.println("");
         System.out.println("La sumatoria de los num pares es: " + aum);
 
-//9 incomp
+//9 i
         int contp = 0, conti = 0, contn = 0;
         int[][] e = new int[3][5];
         for (int i = 0; i < e.length; i++) {
@@ -198,10 +198,29 @@ public class Repaso {
                 + "La cantidad de Numeros neutro es: " + contn);
 
 //10
+        ArrayList<Integer> ed = new ArrayList<Integer>();
+        int nm = 0;
+        ed.add(1);
+        ed.add(2);
+        ed.add(3);
+        ed.add(4);
+        ed.add(5);
+        ed.add(6);
+        ed.add(7);
+        ed.add(8);
+        ed.add(9);
+        ed.add(0);
+
+        int contd = 0;
+        System.out.println("");
+        System.out.println("Los números primos son:");
+        for (int i = 0; i < ed.size(); i++) {
+            
+        }
 //11
         ArrayList<Integer> cd = new ArrayList<Integer>();
         int prom;
-        int acu=0;
+        int acu = 0;
         cd.add(1);
         cd.add(2);
         cd.add(3);
@@ -252,8 +271,10 @@ public class Repaso {
         System.out.println("Suma de dos matrices de 3x3:");
         for (int i = 0; i < mr.length; i++) {
             for (int j = 0; j < mr.length; j++) {
-                System.out.println(mr[i][j] + "");
+                System.out.println(mr[i][j]);
             }
         }
+        //13
+        //14
     }
 }
