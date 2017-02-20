@@ -115,21 +115,29 @@ public class Repaso {
 
         System.out.println("");
         System.out.println("Elemento dado: " + ab.get(3));
-//6 i
-        // System.out.println("matriz");
+//6 
         int[][] c = new int[3][4];
+        int nmay = 0, x = 0, y = 0;
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[i].length; j++) {
-                c[i][j] = (int) (Math.random() * 9 + 1);
-                //System.out.println(c[i][j]);
+                c[i][j] = (int) (Math.random() * 50 + 1);
+                System.out.println(c[i][j]);
+
             }
+            System.out.println("");
         }
 
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c.length; j++) {
-
+                if (c[i][j] > nmay) {
+                    nmay = c[i][j];
+                    x = i;
+                    y = j;
+                }
             }
         }
+        System.out.println("");
+        System.out.println("El número mayor es: " + nmay + "\n En la posición: (" + x + ")(" + y + ")");
 
 //7 
         ArrayList<Integer> abc = new ArrayList<Integer>();
@@ -151,7 +159,7 @@ public class Repaso {
         System.out.println("");
         System.out.println("La sumatoria e: " + acuml);
 
-//8 I
+//8 
         int[][] d = new int[2][5];
         int aum = 0;
         for (int i = 0; i < d.length; i++) {
@@ -162,7 +170,7 @@ public class Repaso {
         }
 
         for (int i = 0; i < d.length; i++) {
-            for (int j = 0; j < d.length; j++) {
+            for (int j = 0; j < d[i].length; j++) {
                 if (d[i][j] % 2 == 0) {
                     aum = aum + d[i][j];
                 }
@@ -171,24 +179,24 @@ public class Repaso {
         System.out.println("");
         System.out.println("La sumatoria de los num pares es: " + aum);
 
-//9 i
+//9 
         int contp = 0, conti = 0, contn = 0;
         int[][] e = new int[3][5];
         for (int i = 0; i < e.length; i++) {
             for (int j = 0; j < e[i].length; j++) {
                 e[i][j] = (int) (Math.random() * 9 + 1);
-                System.out.println(e[i][j]);
+                //System.out.println(e[i][j]);
             }
         }
 
         for (int i = 0; i < e.length; i++) {
-            for (int j = 0; j < e.length; j++) {
-                if (e[i][j] % 2 == 0) {
-                    contp = contp + 1;
+            for (int j = 0; j < e[i].length; j++) {
+                if (e[i][j] == 0) {
+                    contn = contn + 1;
                 } else if (e[i][j] % 2 != 0) {
                     conti = conti + 1;
                 } else {
-                    contn = contn + 1;
+                    contp = contp + 1;
                 }
             }
         }
@@ -197,26 +205,6 @@ public class Repaso {
                 + "La cantidad de Numeros impares es: " + conti + "\n"
                 + "La cantidad de Numeros neutro es: " + contn);
 
-//10
-        ArrayList<Integer> ed = new ArrayList<Integer>();
-        int nm = 0;
-        ed.add(1);
-        ed.add(2);
-        ed.add(3);
-        ed.add(4);
-        ed.add(5);
-        ed.add(6);
-        ed.add(7);
-        ed.add(8);
-        ed.add(9);
-        ed.add(0);
-
-        int contd = 0;
-        System.out.println("");
-        System.out.println("Los números primos son:");
-        for (int i = 0; i < ed.size(); i++) {
-            
-        }
 //11
         ArrayList<Integer> cd = new ArrayList<Integer>();
         int prom;
@@ -275,6 +263,19 @@ public class Repaso {
             }
         }
         //13
-        //14
+        int[][] m = new int[4][4];
+        System.out.println("");
+        System.out.println("La matriz Identidad es:");
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
+                if (i == j) {
+                    m[i][j] = 1;
+                } else {
+                    m[i][j] = 0;
+                }
+                System.out.println(m[i][j] + "");
+            }
+            System.out.println("");
+        }
     }
 }
